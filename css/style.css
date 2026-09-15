@@ -1,0 +1,126 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f7fb;
+    color: #263238;
+    padding-bottom: 90px;
+}
+
+.app-header {
+    background: #0d6efd;
+    color: white;
+    border-radius: 0 0 22px 22px;
+}
+
+.profile-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-card,
+.app-card,
+.quick-card {
+    background: white;
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0,0,0,.06);
+}
+
+.quick-card {
+    min-height: 105px;
+    padding: 18px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #263238;
+    transition: .2s;
+}
+
+.quick-card:hover {
+    transform: translateY(-3px);
+    color: #0d6efd;
+}
+
+.quick-card span {
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+
+.app-section {
+    scroll-margin-top: 20px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-big {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #e9f2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.bottom-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 70px;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+.bottom-nav a {
+    color: #495057;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.bottom-nav a:hover {
+    color: #0d6efd;
+}
+
+.bottom-nav span {
+    font-size: 11px;
+}
+
+@media (min-width: 768px) {
+    .bottom-nav {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: 650px;
+        border-radius: 18px 18px 0 0;
+    }
+}
